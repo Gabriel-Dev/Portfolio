@@ -29,7 +29,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/Portfolio`;
 
   return (
     <main id="home">
@@ -44,29 +44,35 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Olá, bem vindo ao meu portfolio!</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+            Apaixonado por{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
-              </Text>{" "}
-              creating and{" "}
+                Tecnologia
+              </Text>{", "}
+              criar e{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                Desenvolver
               </Text>{" "}
-              projects
+              projetos
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+            Uma das minhas maiores paixões é ver ideias ganharem vida e se transformarem em realidade. 
+            A cada novo projeto, mergulho de cabeça, dedicando tempo, esforço e criatividade para alcançar resultados incríveis. 
+            É gratificante ver a evolução, superar desafios e alcançar objetivos. Estou sempre animado para embarcar em novos 
+            projetos e explorar diferentes tecnologias, desde a concepção até a implementação. Meu objetivo é criar soluções 
+            inovadoras que tragam valor e impacto positivo para as pessoas e a sociedade como um todo.
+            </Text>
+            <Text type="body1" color="grey3"> 
+              Descubra aqui neste ambiente, criado especialmente para você, todos os meus projetos e tecnologias.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+              Veja o código-fonte do meu portfólio
               </Button>
               <Button
                 color="grey5"
@@ -91,14 +97,8 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
-                My projects
-              </Text>
-              <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
-                <Text as="span" color="brand5">
-                  side projects
-                </Text>
+              <Text as="h2" type="heading3" color="grey4">
+                Projetos
               </Text>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>

@@ -53,3 +53,4 @@ export const NavbarMobileArea = styled("div", {
   display: "flex",
   justifyContent: "space-between",
 });
+
