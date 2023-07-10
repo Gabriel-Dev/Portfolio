@@ -47,10 +47,11 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Olá, bem vindo ao meu portfolio!</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            Apaixonado por{" "}
+              Apaixonado por{" "}
               <Text as="span" type="heading1" color="brand1">
                 Tecnologia
-              </Text>{", "}
+              </Text>
+              {", "}
               criar e{" "}
               <Text as="span" type="heading1" color="brand1">
                 Desenvolver
@@ -58,21 +59,26 @@ export const Home = (): JSX.Element => {
               projetos
             </Text>
             <Text type="body1" color="grey2">
-            Uma das minhas maiores paixões é ver ideias ganharem vida e se transformarem em realidade. 
-            A cada novo projeto, mergulho de cabeça, dedicando tempo, esforço e criatividade para alcançar resultados incríveis. 
-            É gratificante ver a evolução, superar desafios e alcançar objetivos. Estou sempre animado para embarcar em novos 
-            projetos e explorar diferentes tecnologias, desde a concepção até a implementação. Meu objetivo é criar soluções 
-            inovadoras que tragam valor e impacto positivo para as pessoas e a sociedade como um todo.
+              Uma das minhas maiores paixões é ver ideias ganharem vida e se
+              transformarem em realidade. A cada novo projeto, mergulho de
+              cabeça, dedicando tempo, esforço e criatividade para alcançar
+              resultados incríveis. É gratificante ver a evolução, superar
+              desafios e alcançar objetivos. Estou sempre animado para embarcar
+              em novos projetos e explorar diferentes tecnologias, desde a
+              concepção até a implementação. Meu objetivo é criar soluções
+              inovadoras que tragam valor e impacto positivo para as pessoas e a
+              sociedade como um todo.
             </Text>
-            <Text type="body1" color="grey3"> 
-              Descubra aqui neste ambiente, criado especialmente para você, todos os meus projetos e tecnologias.
+            <Text type="body1" color="grey3">
+              Descubra aqui neste ambiente, criado especialmente para você,
+              todos os meus projetos e tecnologias.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
                 Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-              Veja o código-fonte do meu portfólio
+                Veja o código-fonte do meu portfólio
               </Button>
               <Button
                 color="grey5"

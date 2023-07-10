@@ -4,7 +4,7 @@ import { Text } from "../../styles/Text";
 
 export const scaleUp = keyframes({
   "0%": { transform: "translateY(15%)" },
-  "100%": { transform: "translateY(-140%)" },
+  "100%": { transform: "translateY(-120%)" },
 });
 
 export const StackCard = styled("div", {
@@ -14,6 +14,7 @@ export const StackCard = styled("div", {
   alignItems: "center",
   justifyContent: "center",
   position: "relative",
+  
 
   [`& ${Text}`]: {
     opacity: 0,
@@ -48,8 +49,10 @@ export const StackCard = styled("div", {
     [`& ${Text}`]: {
       opacity: 1,
       top: 0,
-      transform: "translateY(-140%)",
-      animation: `${scaleUp} 200ms`,
+      transform: "translateY(-120%)",
+      animation: `${scaleUp} 500ms ease`,
     },
+    transform: "translateY(-10%)",
+    transition: "500ms ease"
   },
 });
